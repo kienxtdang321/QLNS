@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm Nhân Viên</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Thêm Nhân Viên</h1>
+    </header>
+
+    <div class="form-container">
+        <h2>Thông Tin Nhân Viên</h2>
+        <input type="text" id="firstName" placeholder="Họ" required />
+        <input type="text" id="lastName" placeholder="Tên" required />
+        <input type="date" id="dateOfBirth" required />
+        <input type="text" id="address" placeholder="Địa chỉ" required />
+        <select id="gender" required>
+            <option value="">Chọn giới tính</option>
+            <option value="Nam">Nam</option>
+            <option value="Nữ">Nữ</option>
+        </select>
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="phoneNumber" placeholder="Số điện thoại" required />
+        <button id="addEmployee">Thêm Nhân Viên</button>
+    </div>
+
+    <div class="search-container">
+        <h2>Tìm Kiếm Nhân Viên</h2>
+        <input type="text" id="searchName" placeholder="Nhập tên nhân viên" />
+        <button id="searchButton">Tìm Kiếm</button>
+    </div>
+
+    <h2>Danh Sách Nhân Viên</h2>
+    <table id="employeeTable">
+        <thead>
+            <tr>
+                <th>Họ và Tên</th>
+                <th>Ngày Sinh</th>
+                <th>Địa Chỉ</th>
+                <th>Giới Tính</th>
+                <th>Email</th>
+                <th>Số Điện Thoại</th>
+            </tr>
+        </thead>
+        <tbody id="employeeList"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<link rel="stylesheet" href="add_employee.css">

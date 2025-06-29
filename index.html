@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Chấm Công</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="menu-toggle">☰</div>
+    <div class="title">
+      <h1>Dashboard</h1>
+      <span>Tổng quan hệ thống</span>
+    </div>
+    <div class="user-info">
+      <div class="notification">🔔<span class="badge">3</span></div>
+      <div class="user-name">
+        Nguyễn Văn Admin <br />
+        <small>Quản trị viên</small>
+      </div>
+      <div class="user-avatar">NA</div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="stats">
+      <div class="card blue">
+        <div class="card-content">
+          <p class="label">Tổng nhân viên</p>
+          <h2>245</h2>
+          <p class="subtext">+12 tháng này</p>
+        </div>
+        <div class="icon">👥</div>
+      </div>
+      <div class="card green">
+        <div class="card-content">
+          <p class="label">Có mặt hôm nay</p>
+          <h2>203</h2>
+          <p class="subtext">80.8% tổng số</p>
+        </div>
+        <div class="icon">✅</div>
+      </div>
+      <div class="card yellow">
+        <div class="card-content">
+          <p class="label">Đơn nghỉ phép</p>
+          <h2>23</h2>
+          <p class="subtext orange">8 chờ duyệt</p>
+        </div>
+        <div class="icon">📅</div>
+      </div>
+      <div class="card purple">
+        <div class="card-content">
+          <p class="label">Phòng ban</p>
+          <h2>12</h2>
+          <p class="subtext">Đang hoạt động</p>
+        </div>
+        <div class="icon">🏢</div>
+      </div>
+    </section>
+
+    <section class="quick-actions">
+        <h3>Thao tác nhanh</h3>
+        <button class="btn primary">🕒 Chấm công vào</button>
+        <button class="btn">📆 Đăng ký nghỉ phép</button>
+        <button class="btn" onclick="location.href='add_employee.html'">➕ Thêm nhân viên</button>
+        <button class="btn">📄 Xuất báo cáo</button>
+      </section>
+      <button class="btn">📄 Xuất báo cáo</button>
+    </section>
+  </main>
+</body>
+</html>
